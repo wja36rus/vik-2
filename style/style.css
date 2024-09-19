@@ -1,14 +1,14 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
 #home {
   height: calc(100vh - 80px);
-  background-image: url('../images/img/background.jpg');
+  background-image: url("../images/img/background.jpg");
   background-position: right;
   background-size: cover;
   padding: 40px;
@@ -160,7 +160,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  width: 50%;
+  width: 51%;
+  margin: 0 auto;
 }
 
 .title-about {
@@ -229,7 +230,7 @@ nav {
 
 #doit {
   background-attachment: fixed;
-  background-image: url('../images/form/blob.jpg');
+  background-image: url("../images/form/blob.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -279,9 +280,9 @@ nav {
 }
 
 .doit-btn::before {
-  content: ' ';
+  content: " ";
   position: absolute;
-  background-image: url('../images/icon/arrow-form.svg');
+  background-image: url("../images/icon/arrow-form.svg");
   width: 45px;
   height: 54px;
   background-size: contain;
@@ -350,7 +351,7 @@ nav {
 
 #form {
   height: 100vh;
-  background-image: url('../images/form/form.jpg');
+  background-image: url("../images/form/form.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -457,4 +458,44 @@ footer {
   gap: 10px;
   margin: 0 auto;
   width: max-content;
+}
+
+@media screen and (max-width: 991px) {
+  #nav-home {
+    display: grid;
+    height: auto;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    padding: 5vh 0;
+  }
+
+  .media-icon {
+    margin: 0 auto;
+  }
+
+  #home {
+    padding: 0;
+    height: auto;
+  }
+
+  .about-wrapper {
+    display: grid;
+    width: auto;
+    text-align: center;
+}
+
+.text-about-wrapper {
+    margin: 0 auto;
+}
+
+.form-wrapper {
+    display: grid;
+}
+
+.form-text {
+    width: 50%;
+}
 }
