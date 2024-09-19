@@ -460,6 +460,24 @@ footer {
   width: max-content;
 }
 
+@media screen and (max-width: 1520px) {
+  .about-wrapper {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .about-wrapper {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .about-wrapper {
+    width: 95%;
+  }
+}
+
 @media screen and (max-width: 991px) {
   #nav-home {
     display: grid;
@@ -510,6 +528,15 @@ footer {
 
   #preference {
     width: 50%;
+  }
+
+  .about-img {
+    width: 180px;
+  }
+
+  .about-gallery {
+    width: 75%;
+    justify-content: center;
   }
 }
 
