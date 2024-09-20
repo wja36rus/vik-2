@@ -1,19 +1,20 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Roboto", system-ui;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
 #home {
   height: calc(100vh - 80px);
-  background-image: url('../images/img/background.jpg');
+  background-image: url("../images/img/background.jpg");
   background-position: 58% 36%;
-  background-size: 152%;
+  background-size: cover;
   padding: 40px;
   color: white;
   text-align: center;
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -53,7 +54,16 @@ nav {
   height: 40px;
 }
 
-.logo {width: 20rem;top: 4rem;position: relative;left: -3rem;}
+.logo-wrap {
+  width: 30rem;
+  text-align: left;
+}
+
+.logo {
+  width: 295px;
+  position: relative;
+  top: 10vh;
+}
 
 .img-media-icon {
   transition: 0.3s;
@@ -96,10 +106,10 @@ nav {
 .about-home-btn {
   background: #f5914f;
   color: white;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 22px 60px;
+  padding: 15px 50px;
   border: none;
   border-radius: 4px;
   transition: 0.3s;
@@ -236,7 +246,7 @@ nav {
 
 #doit {
   background-attachment: fixed;
-  background-image: url('../images/form/blob.jpg');
+  background-image: url("../images/form/blob.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -278,20 +288,21 @@ nav {
 .doit-btn {
   background: #f5914f;
   color: white;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 700;
-  padding: 22px 60px;
+  padding: 15px 50px;
   border: none;
   border-radius: 4px;
   transition: 0.3s;
   position: relative;
   text-decoration: none;
+  font-variant: all-petite-caps;
 }
 
 .doit-btn::before {
-  content: ' ';
+  content: " ";
   position: absolute;
-  background-image: url('../images/icon/arrow-form.svg');
+  background-image: url("../images/icon/arrow-form.svg");
   width: 45px;
   height: 54px;
   background-size: contain;
@@ -362,7 +373,7 @@ nav {
 
 #form {
   height: 100vh;
-  background-image: url('../images/form/form.jpg');
+  background-image: url("../images/form/form.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -404,13 +415,14 @@ nav {
 .form-btn {
   background: #f5914f;
   color: white;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 700;
-  padding: 22px 60px;
+  padding: 15px 50px;
   border: none;
   border-radius: 4px;
   transition: 0.3s;
   position: relative;
+  font-variant: all-petite-caps;
 }
 
 .form-btn:hover {
@@ -503,6 +515,26 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+  .doit-text {
+    width: 50%;
+  }
+  .service-card-wrapper {
+    width: 65%;
+  }
+
+  .logo {
+    width: 170px;
+    top: auto;
+    position: relative;
+    left: auto;
+    margin: 0 auto;
+  }
+
+  .logo-wrap {
+    width: auto;
+    text-align: center;
+  }
+
   #nav-home {
     display: grid;
     height: auto;
@@ -565,12 +597,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .about-img {
-    width: 185px;
+  .text-home {
+    width: 80%;
   }
 
-  .service-card {
-    width: 265px;
+  .about-img {
+    width: 185px;
   }
 
   .doit-text {
@@ -587,8 +619,12 @@ footer {
 }
 
 @media screen and (max-width: 610px) {
+  .back-doit-wrapper {
+    height: 75vh;
+  }
+
   .title-home {
-    font-size: 50px;
+    font-size: 45px;
     line-height: normal;
   }
 
