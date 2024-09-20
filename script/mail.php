@@ -4,7 +4,7 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $text = $_POST["text"];
 
-$to  = "<mail@example.com>, "; 
+$to  = "<info@npk-vik.ru>"; 
 
 $subject = "Новое письмо с сайта НПК VIK"; 
 
