@@ -497,11 +497,33 @@ footer {
   font-weight: 400;
 }
 
-.form-error {
+.form-inputs {
   display: grid;
-  color: #ffffff;
   gap: 10px;
-  height: 90px;
+  height: 85px;
+  color: white;
+}
+
+.success-form {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  color: white;
+  background: #000000c4;
+  z-index: 999;
+  transition: 0.3s;
+  transform: translateY(-100%);
+}
+
+.success-form.active {
+  transition: 0.3s;
+  transform: translateY(0%);
 }
 
 @media screen and (max-width: 1520px) {

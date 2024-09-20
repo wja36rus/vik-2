@@ -184,34 +184,46 @@
           </div>
         </div>
       </section>
-      <form action="#" id="form">
+      <div id="form">
+        <div class="success-form">
+          <img src="./images/icon/success.svg" alt="" class="success-img" />
+          <h1 class="success-title">Сообщение отправлено!</h1>
+          <p class="success-text">Мы свяжемся с Вами в ближайшее время.</p>
+        </div>
         <h2 class="form-title">Напишите нам!</h2>
         <p class="form-text">Будем рады ответить на ваши вопросы:</p>
         <div class="form-wrapper">
-          <small id="name-error" class="form-error"
-            ><input id="name" type="text" placeholder="Имя*" class="from-input"
-          /></small>
-          <small id="email-error" class="form-error">
+          <div class="form-inputs">
+            <input
+              id="name"
+              type="text"
+              placeholder="Имя*"
+              class="from-input"
+            />
+            <small id="error-name"></small>
+          </div>
+          <div class="form-inputs">
             <input
               id="email"
               type="email"
               placeholder="E-mail*"
               class="from-input"
             />
-          </small>
-          <small id="text-error" class="form-error">
+            <small id="error-email"></small>
+          </div>
+          <div class="form-inputs">
             <input
               id="text"
               type="text"
               placeholder="Текcт"
               class="from-input"
             />
-          </small>
-          <small class="form-error" class="form-error">
+          </div>
+          <div class="form-inputs">
             <button id="send" class="form-btn">Отправить</button>
-          </small>
+          </div>
         </div>
-      </form>
+      </div>
     </main>
     <footer id="contact">
       <h3 class="footer-title">НАШИ КОНТАКТЫ</h3>
