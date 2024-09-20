@@ -13,6 +13,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="home">
@@ -183,10 +188,28 @@
         <h2 class="form-title">Напишите нам!</h2>
         <p class="form-text">Будем рады ответить на ваши вопросы:</p>
         <div class="form-wrapper">
-          <input type="text" placeholder="Имя" class="from-input" />
-          <input type="email" placeholder="E-mail" class="from-input" />
-          <input type="text" placeholder="Текcт" class="from-input" />
-          <button class="form-btn">Отправить</button>
+          <small id="name-error" class="form-error"
+            ><input id="name" type="text" placeholder="Имя*" class="from-input"
+          /></small>
+          <small id="email-error" class="form-error">
+            <input
+              id="email"
+              type="email"
+              placeholder="E-mail*"
+              class="from-input"
+            />
+          </small>
+          <small id="text-error" class="form-error">
+            <input
+              id="text"
+              type="text"
+              placeholder="Текcт"
+              class="from-input"
+            />
+          </small>
+          <small class="form-error" class="form-error">
+            <button id="send" class="form-btn">Отправить</button>
+          </small>
         </div>
       </form>
     </main>
@@ -209,4 +232,5 @@
       </div>
     </footer>
   </body>
+  <script src="./script/script.js"></script>
 </html>

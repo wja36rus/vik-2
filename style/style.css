@@ -423,6 +423,7 @@ nav {
   transition: 0.3s;
   position: relative;
   font-variant: all-petite-caps;
+  height: 58px;
 }
 
 .form-btn:hover {
@@ -494,6 +495,13 @@ footer {
   color: #2a3e95;
   text-decoration: none;
   font-weight: 400;
+}
+
+.form-error {
+  display: grid;
+  color: #ffffff;
+  gap: 10px;
+  height: 90px;
 }
 
 @media screen and (max-width: 1520px) {
