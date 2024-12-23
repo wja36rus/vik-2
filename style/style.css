@@ -234,7 +234,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 5vh;
-  width: 39%;
+  width: 50rem;
   margin: 0 auto;
   flex-direction: column;
 }
@@ -494,6 +494,13 @@ footer {
 .service-card-href {
   color: #2a3e95;
   text-decoration: none;
+}
+
+.service-card-href:hover {
+  color: #0a143f;
+}
+
+.service-card-href-text {
   font-weight: 400;
 }
 
@@ -752,4 +759,41 @@ footer {
 ::placeholder {
   /* Most modern browsers support this now. */
   color: #ffffff;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.image-download {
+  width: 35px;
+}
+
+.grid-download {
+  display: grid;
+  gap: 8px;
+}
+
+.service-bottom-text {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+@media screen and (max-width: 1520px) {
+  .service-bottom-text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .service-bottom-text {
+    width: 95%;
+    font-size: 20px;
+  }
 }
