@@ -797,3 +797,22 @@ footer {
     font-size: 20px;
   }
 }
+
+.flex-docs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.root-docs {
+  padding-top: 3rem;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
+
+.image-downloadb {
+  width: 25px;
+}
